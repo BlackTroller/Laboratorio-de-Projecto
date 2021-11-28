@@ -1,17 +1,17 @@
-import { DecksComponent } from './decks/decks.component';
+import { DecksTableComponent } from './decks-table/decks-table.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { UsersComponent } from './users/users.component';
-import { CardsComponent } from './cards/cards.component';
-import { ExercisesComponent } from './exercises/exercises.component';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
+import { UsersTableComponent } from './users-table/users-table.component';
+import { CardsTableComponent } from './cards-table/cards-table.component';
+import { ExercisesTableComponent } from './exercises-table/exercises-table.component';
 
 const routes: Routes = [
-  {path: 'users', component: UsersComponent},
-  {path: 'decks', component: DecksComponent},
-  {path: 'cards', component: CardsComponent},
-  {path: 'exercises', component: ExercisesComponent},
+  {path: 'users', component: UsersTableComponent},
+  {path: 'decks', component: DecksTableComponent},
+  {path: 'cards', component: CardsTableComponent},
+  {path: 'exercises', component: ExercisesTableComponent},
   {path: 'home', component: HomeComponent},
   {path: '', redirectTo: '/home', pathMatch:'full'},
 ];

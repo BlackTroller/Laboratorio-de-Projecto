@@ -3,24 +3,32 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { UsersComponent } from './users/users.component';
-import { DecksComponent } from './decks/decks.component';
-import { CardsComponent } from './cards/cards.component';
-import { ExercisesComponent } from './exercises/exercises.component';
 import { HomeComponent } from './home/home.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { UsersTableComponent } from './users-table/users-table.component';
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
+import { DecksTableComponent } from './decks-table/decks-table.component';
+import { CardsTableComponent } from './cards-table/cards-table.component';
+import { ExercisesTableComponent } from './exercises-table/exercises-table.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    UsersComponent,
-    DecksComponent,
-    CardsComponent,
-    ExercisesComponent,
-    HomeComponent
+    HomeComponent,
+    UsersTableComponent,
+    DecksTableComponent,
+    CardsTableComponent,
+    ExercisesTableComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule
   ],
   providers: [],
   bootstrap: [AppComponent]
