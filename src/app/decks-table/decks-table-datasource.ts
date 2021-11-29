@@ -6,32 +6,34 @@ import { Observable, of as observableOf, merge } from 'rxjs';
 
 // TODO: Replace this with your own data model type
 export interface DecksTableItem {
-  name: string;
+  deck: string;
   id: number;
+  total: number;
+  workout: string;
 }
 
 // TODO: replace this with real data from your application
 const EXAMPLE_DATA: DecksTableItem[] = [
-  {id: 1, name: 'Hydrogen'},
-  {id: 2, name: 'Helium'},
-  {id: 3, name: 'Lithium'},
-  {id: 4, name: 'Beryllium'},
-  {id: 5, name: 'Boron'},
-  {id: 6, name: 'Carbon'},
-  {id: 7, name: 'Nitrogen'},
-  {id: 8, name: 'Oxygen'},
-  {id: 9, name: 'Fluorine'},
-  {id: 10, name: 'Neon'},
-  {id: 11, name: 'Sodium'},
-  {id: 12, name: 'Magnesium'},
-  {id: 13, name: 'Aluminum'},
-  {id: 14, name: 'Silicon'},
-  {id: 15, name: 'Phosphorus'},
-  {id: 16, name: 'Sulfur'},
-  {id: 17, name: 'Chlorine'},
-  {id: 18, name: 'Argon'},
-  {id: 19, name: 'Potassium'},
-  {id: 20, name: 'Calcium'},
+  {id: 1, deck: 'Hydrogen', total: 23, workout: 'Treino de braços'},
+  {id: 2, deck: 'Helium', total: 23, workout: 'Treino de braços'},
+  {id: 3, deck: 'Lithium', total: 23, workout: 'Treino de braços'},
+  {id: 4, deck: 'Beryllium', total: 23, workout: 'Treino de braços'},
+  {id: 5, deck: 'Boron', total: 23, workout: 'Treino de braços'},
+  {id: 6, deck: 'Carbon', total: 23, workout: 'Treino de braços'},
+  {id: 7, deck: 'Nitrogen', total: 23, workout: 'Treino de braços'},
+  {id: 8, deck: 'Oxygen', total: 23, workout: 'Treino de braços'},
+  {id: 9, deck: 'Fluorine', total: 23, workout: 'Treino de braços'},
+  {id: 10, deck: 'Neon', total: 23, workout: 'Treino de braços'},
+  {id: 11, deck: 'Sodium', total: 23, workout: 'Treino de braços'},
+  {id: 12, deck: 'Magnesium', total: 23, workout: 'Treino de braços'},
+  {id: 13, deck: 'Aluminum', total: 23, workout: 'Treino de braços'},
+  {id: 14, deck: 'Silicon', total: 23, workout: 'Treino de braços'},
+  {id: 15, deck: 'Phosphorus', total: 23, workout: 'Treino de braços'},
+  {id: 16, deck: 'Sulfur', total: 23, workout: 'Treino de braços'},
+  {id: 17, deck: 'Chlorine', total: 23, workout: 'Treino de braços'},
+  {id: 18, deck: 'Argon', total: 23, workout: 'Treino de braços'},
+  {id: 19, deck: 'Potassium', total: 23, workout: 'Treino de braços'},
+  {id: 20, deck: 'Calcium', total: 23, workout: 'Treino de braços'},
 ];
 
 /**
@@ -97,7 +99,7 @@ export class DecksTableDataSource extends DataSource<DecksTableItem> {
     return data.sort((a, b) => {
       const isAsc = this.sort?.direction === 'asc';
       switch (this.sort?.active) {
-        case 'name': return compare(a.name, b.name, isAsc);
+        case 'deck': return compare(a.deck, b.deck, isAsc);
         case 'id': return compare(+a.id, +b.id, isAsc);
         default: return 0;
       }

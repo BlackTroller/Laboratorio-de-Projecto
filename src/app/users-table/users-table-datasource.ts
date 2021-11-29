@@ -8,30 +8,36 @@ import { Observable, of as observableOf, merge } from 'rxjs';
 export interface UsersTableItem {
   name: string;
   id: number;
+  email: string;
+  address: string;
+  age: number;
+  password: string;
+  role: string;
+  blocked: string;
 }
 
 // TODO: replace this with real data from your application
 const EXAMPLE_DATA: UsersTableItem[] = [
-  {id: 1, name: 'Hydrogen'},
-  {id: 2, name: 'Helium'},
-  {id: 3, name: 'Lithium'},
-  {id: 4, name: 'Beryllium'},
-  {id: 5, name: 'Boron'},
-  {id: 6, name: 'Carbon'},
-  {id: 7, name: 'Nitrogen'},
-  {id: 8, name: 'Oxygen'},
-  {id: 9, name: 'Fluorine'},
-  {id: 10, name: 'Neon'},
-  {id: 11, name: 'Sodium'},
-  {id: 12, name: 'Magnesium'},
-  {id: 13, name: 'Aluminum'},
-  {id: 14, name: 'Silicon'},
-  {id: 15, name: 'Phosphorus'},
-  {id: 16, name: 'Sulfur'},
-  {id: 17, name: 'Chlorine'},
-  {id: 18, name: 'Argon'},
-  {id: 19, name: 'Potassium'},
-  {id: 20, name: 'Calcium'},
+  {id: 1, name: 'Hydrogen', email:'teste@gmail.com', address: 'rua 123 do Porto', age: 20, password: '*********', role: 'user', blocked: 'false'},
+  {id: 2, name: 'Helium', email:'teste@gmail.com', address: 'rua 123 do Porto', age: 20, password: '*********', role: 'user', blocked: 'false'},
+  {id: 3, name: 'Lithium', email:'teste@gmail.com', address: 'rua 123 do Porto', age: 20, password: '*********', role: 'user', blocked: 'false'},
+  {id: 4, name: 'Beryllium', email:'teste@gmail.com', address: 'rua 123 do Porto', age: 20, password: '*********', role: 'user', blocked: 'false'},
+  {id: 5, name: 'Boron', email:'teste@gmail.com', address: 'rua 123 do Porto', age: 20, password: '*********', role: 'user', blocked: 'false'},
+  {id: 6, name: 'Carbon', email:'teste@gmail.com', address: 'rua 123 do Porto', age: 20, password: '*********', role: 'user', blocked: 'false'},
+  {id: 7, name: 'Nitrogen', email:'teste@gmail.com', address: 'rua 123 do Porto', age: 20, password: '*********', role: 'user', blocked: 'false'},
+  {id: 8, name: 'Oxygen', email:'teste@gmail.com', address: 'rua 123 do Porto', age: 20, password: '*********', role: 'user', blocked: 'false'},
+  {id: 9, name: 'Fluorine', email:'teste@gmail.com', address: 'rua 123 do Porto', age: 20, password: '*********', role: 'user', blocked: 'false'},
+  {id: 10, name: 'Neon', email:'teste@gmail.com', address: 'rua 123 do Porto', age: 20, password: '*********', role: 'user', blocked: 'false'},
+  {id: 11, name: 'Sodium', email:'teste@gmail.com', address: 'rua 123 do Porto', age: 20, password: '*********', role: 'user', blocked: 'false'},
+  {id: 12, name: 'Magnesium', email:'teste@gmail.com', address: 'rua 123 do Porto', age: 20, password: '*********', role: 'user', blocked: 'false'},
+  {id: 13, name: 'Aluminum', email:'teste@gmail.com', address: 'rua 123 do Porto', age: 20, password: '*********', role: 'user', blocked: 'false'},
+  {id: 14, name: 'Silicon', email:'teste@gmail.com', address: 'rua 123 do Porto', age: 20, password: '*********', role: 'user', blocked: 'false'},
+  {id: 15, name: 'Phosphorus', email:'teste@gmail.com', address: 'rua 123 do Porto', age: 20, password: '*********', role: 'user', blocked: 'false'},
+  {id: 16, name: 'Sulfur', email:'teste@gmail.com', address: 'rua 123 do Porto', age: 20, password: '*********', role: 'user', blocked: 'false'},
+  {id: 17, name: 'Chlorine', email:'teste@gmail.com', address: 'rua 123 do Porto', age: 20, password: '*********', role: 'user', blocked: 'false'},
+  {id: 18, name: 'Argon', email:'teste@gmail.com', address: 'rua 123 do Porto', age: 20, password: '*********', role: 'user', blocked: 'false'},
+  {id: 19, name: 'Potassium', email:'teste@gmail.com', address: 'rua 123 do Porto', age: 20, password: '*********', role: 'user', blocked: 'false'},
+  {id: 20, name: 'Calcium', email:'teste@gmail.com', address: 'rua 123 do Porto', age: 20, password: '*********', role: 'user', blocked: 'false'},
 ];
 
 /**
