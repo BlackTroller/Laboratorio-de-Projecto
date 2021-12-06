@@ -10,13 +10,14 @@ import { UsersTableDataSource, UsersTableItem } from './users-table-datasource';
   styleUrls: ['./users-table.component.css']
 })
 export class UsersTableComponent implements AfterViewInit {
+  
   @ViewChild(MatPaginator) paginator!: MatPaginator;
   @ViewChild(MatSort) sort!: MatSort;
   @ViewChild(MatTable) table!: MatTable<UsersTableItem>;
   dataSource: UsersTableDataSource;
 
   /** Columns displayed in the table. Columns IDs can be added, removed, or reordered. */
-  displayedColumns = ['id', 'name', 'email', 'address', 'age', 'password', 'role', 'blocked'];
+  displayedColumns = ['id', 'name', 'email', 'address', 'age', 'role', 'blocked', 'edit'];
 
   constructor() {
     this.dataSource = new UsersTableDataSource();
