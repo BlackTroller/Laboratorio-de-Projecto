@@ -1,40 +1,30 @@
 
-
+  
+  <h2 class="title">Detalhes do Utilizador</h2>
   <div class="containter_det" >
-    
-    <h2 class="title">Detalhes do Utilizador</h2>
-
     <div class="form_div">
-      <form action="">
+      <form [formGroup]="userForm" (ngSubmit)="onSubmitUser()">
         <p>
-          <mat-form-field appearance="standard">
-            <mat-label style="color: black;">Legacy form field</mat-label>
-            <input matInput placeholder="Placeholder">
-            <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+          <mat-form-field appearance="standard" style="width: 100%;">
+            <mat-label style="color: black;">Name</mat-label>
+            <input matInput placeholder="Placeholder" type="text" formControlName="name" value="" required>
+            <mat-icon matSuffix>text</mat-icon>
             <mat-hint>Hint</mat-hint>
           </mat-form-field>
         </p>
         <p>
-          <mat-form-field appearance="standard">
-            <mat-label style="color: black;">Standard form field</mat-label>
-            <input matInput placeholder="Placeholder">
-            <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+          <mat-form-field appearance="standard" style="width: 100%;">
+            <mat-label style="color: black;">Email</mat-label>
+            <input matInput placeholder="Placeholder" type="email" formControlName="email" value="" required>
+            <mat-icon matSuffix>text</mat-icon>
             <mat-hint>Hint</mat-hint>
           </mat-form-field>
         </p>
         <p>
-          <mat-form-field appearance="standard">
-            <mat-label style="color: black;">Fill form field</mat-label>
-            <input matInput placeholder="Placeholder">
-            <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
-            <mat-hint>Hint</mat-hint>
-          </mat-form-field>
-        </p>
-        <p>
-          <mat-form-field appearance="standard">
-            <mat-label style="color: black;">Outline form field</mat-label>
-            <input matInput placeholder="Placeholder">
-            <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+          <mat-form-field appearance="standard" style="width: 100%;">
+            <mat-label style="color: black;">Phone</mat-label>
+            <input matInput placeholder="Placeholder" formControlName="phone" type="text" value="" required>
+            <mat-icon matSuffix>Number</mat-icon>
             <mat-hint>Hint</mat-hint>
           </mat-form-field>
         </p>
@@ -43,36 +33,24 @@
     </div>
 
     <div class="form_div">
-      <p>
-        <mat-form-field appearance="standard" style="width: 100%;">
-          <input matInput placeholder="Placeholder" disabled>
-          <mat-icon matSuffix>Nome</mat-icon>
-          <mat-hint>Hint</mat-hint>
-        </mat-form-field>
-      </p>
-      <p>
-        <mat-form-field appearance="standard">
-          <mat-label style="color: black;">Standard form field</mat-label>
-          <input matInput placeholder="Placeholder">
-          <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
-          <mat-hint>Hint</mat-hint>
-        </mat-form-field>
-      </p>
-      <p>
-        <mat-form-field appearance="standard">
-          <mat-label style="color: black;">Fill form field</mat-label>
-          <input matInput placeholder="Placeholder">
-          <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
-          <mat-hint>Hint</mat-hint>
-        </mat-form-field>
-      </p>
-      <p>
-        <mat-form-field appearance="standard">
-          <mat-label style="color: black;">Outline form field</mat-label>
-          <input matInput placeholder="Placeholder">
-          <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
-          <mat-hint>Hint</mat-hint>
-        </mat-form-field>
-      </p>
+      <form [formGroup]="passwordForm" (ngSubmit)="onSubmitPassword()">
+        <p>
+          <mat-form-field appearance="standard" style="width: 100%;">
+            <mat-label style="color: black;">New Password</mat-label>
+            <input matInput placeholder="Placeholder" type="password" formControlName="password" value="" required>
+            <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+            <mat-hint>Hint</mat-hint>
+          </mat-form-field>
+        </p>
+        <p>
+          <mat-form-field appearance="standard" style="width: 100%;">
+            <mat-label style="color: black;">Repeat Password</mat-label>
+            <input matInput placeholder="Placeholder" type="password" formControlName="rep_password" value="" required>
+            <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+            <mat-hint>Hint</mat-hint>
+          </mat-form-field>
+        </p>
+        <button type="submit" class="form_btn">Editar Password</button>
+      </form>
     </div>
   </div>
