@@ -16,7 +16,7 @@ export class DecksTableComponent implements AfterViewInit {
   dataSource: DecksTableDataSource;
 
   /** Columns displayed in the table. Columns IDs can be added, removed, or reordered. */
-  displayedColumns = ['id', 'deck', 'total', 'workout'];
+  displayedColumns = ['id', 'deck', 'total', 'workout', 'edit'];
 
   constructor() {
     this.dataSource = new DecksTableDataSource();

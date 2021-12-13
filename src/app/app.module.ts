@@ -18,6 +18,9 @@ import { DecksTableComponent } from './decks-table/decks-table.component';
 import { CardsTableComponent } from './cards-table/cards-table.component';
 import { ExercisesTableComponent } from './exercises-table/exercises-table.component';
 import { UsersDetComponent } from './users-det/users-det.component';
+import { CardsDetComponent } from './cards-det/cards-det.component';
+import { DecksDetComponent } from './decks-det/decks-det.component';
+import { ExercisesDetComponent } from './exercises-det/exercises-det.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +30,10 @@ import { UsersDetComponent } from './users-det/users-det.component';
     DecksTableComponent,
     CardsTableComponent,
     ExercisesTableComponent,
-    UsersDetComponent
+    UsersDetComponent,
+    CardsDetComponent,
+    DecksDetComponent,
+    ExercisesDetComponent
   ],
   imports: [
     BrowserModule,
