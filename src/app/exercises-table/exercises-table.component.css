@@ -16,3 +16,18 @@
 .btn_edit:hover{
   background: #3d4247; 
 }
+
+.btn_add{
+  border: none; 
+  background: #212529; 
+  color: white; 
+  padding-left: 20px; 
+  padding-right: 20px; 
+  padding-top: 5px; 
+  padding-bottom: 5px; 
+  border-radius: 15px;
+}
+
+.btn_add:hover{
+  background: #3d4247; 
+}
