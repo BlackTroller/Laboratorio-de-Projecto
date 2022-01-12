@@ -6,34 +6,33 @@ import { Observable, of as observableOf, merge } from 'rxjs';
 
 // TODO: Replace this with your own data model type
 export interface DecksTableItem {
-  deck: string;
   id: number;
-  total: number;
-  workout: string;
+  deck: string;
+  description: string;
 }
 
 // TODO: replace this with real data from your application
 const EXAMPLE_DATA: DecksTableItem[] = [
-  {id: 1, deck: 'Hydrogen', total: 23, workout: 'Treino de braços'},
-  {id: 2, deck: 'Helium', total: 23, workout: 'Treino de braços'},
-  {id: 3, deck: 'Lithium', total: 23, workout: 'Treino de braços'},
-  {id: 4, deck: 'Beryllium', total: 23, workout: 'Treino de braços'},
-  {id: 5, deck: 'Boron', total: 23, workout: 'Treino de braços'},
-  {id: 6, deck: 'Carbon', total: 23, workout: 'Treino de braços'},
-  {id: 7, deck: 'Nitrogen', total: 23, workout: 'Treino de braços'},
-  {id: 8, deck: 'Oxygen', total: 23, workout: 'Treino de braços'},
-  {id: 9, deck: 'Fluorine', total: 23, workout: 'Treino de braços'},
-  {id: 10, deck: 'Neon', total: 23, workout: 'Treino de braços'},
-  {id: 11, deck: 'Sodium', total: 23, workout: 'Treino de braços'},
-  {id: 12, deck: 'Magnesium', total: 23, workout: 'Treino de braços'},
-  {id: 13, deck: 'Aluminum', total: 23, workout: 'Treino de braços'},
-  {id: 14, deck: 'Silicon', total: 23, workout: 'Treino de braços'},
-  {id: 15, deck: 'Phosphorus', total: 23, workout: 'Treino de braços'},
-  {id: 16, deck: 'Sulfur', total: 23, workout: 'Treino de braços'},
-  {id: 17, deck: 'Chlorine', total: 23, workout: 'Treino de braços'},
-  {id: 18, deck: 'Argon', total: 23, workout: 'Treino de braços'},
-  {id: 19, deck: 'Potassium', total: 23, workout: 'Treino de braços'},
-  {id: 20, deck: 'Calcium', total: 23, workout: 'Treino de braços'},
+  {id: 1, deck: 'Hydrogen', description: 'Treino de braços'},
+  {id: 2, deck: 'Helium', description: 'Treino de braços'},
+  {id: 3, deck: 'Lithium', description: 'Treino de braços'},
+  {id: 4, deck: 'Beryllium', description: 'Treino de braços'},
+  {id: 5, deck: 'Boron', description: 'Treino de braços'},
+  {id: 6, deck: 'Carbon', description: 'Treino de braços'},
+  {id: 7, deck: 'Nitrogen', description: 'Treino de braços'},
+  {id: 8, deck: 'Oxygen', description: 'Treino de braços'},
+  {id: 9, deck: 'Fluorine', description: 'Treino de braços'},
+  {id: 10, deck: 'Neon', description: 'Treino de braços'},
+  {id: 11, deck: 'Sodium', description: 'Treino de braços'},
+  {id: 12, deck: 'Magnesium', description: 'Treino de braços'},
+  {id: 13, deck: 'Aluminum', description: 'Treino de braços'},
+  {id: 14, deck: 'Silicon', description: 'Treino de braços'},
+  {id: 15, deck: 'Phosphorus', description: 'Treino de braços'},
+  {id: 16, deck: 'Sulfur', description: 'Treino de braços'},
+  {id: 17, deck: 'Chlorine', description: 'Treino de braços'},
+  {id: 18, deck: 'Argon', description: 'Treino de braços'},
+  {id: 19, deck: 'Potassium', description: 'Treino de braços'},
+  {id: 20, deck: 'Calcium', description: 'Treino de braços'},
 ];
 
 /**

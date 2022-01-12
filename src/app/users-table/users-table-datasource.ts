@@ -9,34 +9,31 @@ export interface UsersTableItem {
   name: string;
   id: number;
   email: string;
-  address: string;
-  age: number;
-  role: string;
-  blocked: string;
+  phone: number;
 }
 
 // TODO: replace this with real data from your application
 const EXAMPLE_DATA: UsersTableItem[] = [
-  {id: 1, name: 'Hydrogen', email:'teste@gmail.com', address: 'rua 123 do Porto', age: 20,  role: 'user', blocked: 'false'},
-  {id: 2, name: 'Helium', email:'teste@gmail.com', address: 'rua 123 do Porto', age: 20,  role: 'user', blocked: 'false'},
-  {id: 3, name: 'Lithium', email:'teste@gmail.com', address: 'rua 123 do Porto', age: 20,  role: 'user', blocked: 'false'},
-  {id: 4, name: 'Beryllium', email:'teste@gmail.com', address: 'rua 123 do Porto', age: 20,  role: 'user', blocked: 'false'},
-  {id: 5, name: 'Boron', email:'teste@gmail.com', address: 'rua 123 do Porto', age: 20,  role: 'user', blocked: 'false'},
-  {id: 6, name: 'Carbon', email:'teste@gmail.com', address: 'rua 123 do Porto', age: 20,  role: 'user', blocked: 'false'},
-  {id: 7, name: 'Nitrogen', email:'teste@gmail.com', address: 'rua 123 do Porto', age: 20,  role: 'user', blocked: 'false'},
-  {id: 8, name: 'Oxygen', email:'teste@gmail.com', address: 'rua 123 do Porto', age: 20,  role: 'user', blocked: 'false'},
-  {id: 9, name: 'Fluorine', email:'teste@gmail.com', address: 'rua 123 do Porto', age: 20,  role: 'user', blocked: 'false'},
-  {id: 10, name: 'Neon', email:'teste@gmail.com', address: 'rua 123 do Porto', age: 20,  role: 'user', blocked: 'false'},
-  {id: 11, name: 'Sodium', email:'teste@gmail.com', address: 'rua 123 do Porto', age: 20,  role: 'user', blocked: 'false'},
-  {id: 12, name: 'Magnesium', email:'teste@gmail.com', address: 'rua 123 do Porto', age: 20,  role: 'user', blocked: 'false'},
-  {id: 13, name: 'Aluminum', email:'teste@gmail.com', address: 'rua 123 do Porto', age: 20,  role: 'user', blocked: 'false'},
-  {id: 14, name: 'Silicon', email:'teste@gmail.com', address: 'rua 123 do Porto', age: 20,  role: 'user', blocked: 'false'},
-  {id: 15, name: 'Phosphorus', email:'teste@gmail.com', address: 'rua 123 do Porto', age: 20,  role: 'user', blocked: 'false'},
-  {id: 16, name: 'Sulfur', email:'teste@gmail.com', address: 'rua 123 do Porto', age: 20,  role: 'user', blocked: 'false'},
-  {id: 17, name: 'Chlorine', email:'teste@gmail.com', address: 'rua 123 do Porto', age: 20,  role: 'user', blocked: 'false'},
-  {id: 18, name: 'Argon', email:'teste@gmail.com', address: 'rua 123 do Porto', age: 20,  role: 'user', blocked: 'false'},
-  {id: 19, name: 'Potassium', email:'teste@gmail.com', address: 'rua 123 do Porto', age: 20,  role: 'user', blocked: 'false'},
-  {id: 20, name: 'Calcium', email:'teste@gmail.com', address: 'rua 123 do Porto', age: 20,  role: 'user', blocked: 'false'},
+  {id: 1, name: 'Hydrogen', email:'teste@gmail.com', phone: 919191919},
+  {id: 2, name: 'Helium', email:'teste@gmail.com', phone: 919191919},
+  {id: 3, name: 'Lithium', email:'teste@gmail.com', phone: 919191919},
+  {id: 4, name: 'Beryllium', email:'teste@gmail.com', phone: 919191919},
+  {id: 5, name: 'Boron', email:'teste@gmail.com', phone: 919191919},
+  {id: 6, name: 'Carbon', email:'teste@gmail.com', phone: 919191919},
+  {id: 7, name: 'Nitrogen', email:'teste@gmail.com', phone: 919191919},
+  {id: 8, name: 'Oxygen', email:'teste@gmail.com', phone: 919191919},
+  {id: 9, name: 'Fluorine', email:'teste@gmail.com', phone: 919191919},
+  {id: 10, name: 'Neon', email:'teste@gmail.com', phone: 919191919},
+  {id: 11, name: 'Sodium', email:'teste@gmail.com', phone: 919191919},
+  {id: 12, name: 'Magnesium', email:'teste@gmail.com', phone: 919191919},
+  {id: 13, name: 'Aluminum', email:'teste@gmail.com', phone: 919191919},
+  {id: 14, name: 'Silicon', email:'teste@gmail.com', phone: 919191919},
+  {id: 15, name: 'Phosphorus', email:'teste@gmail.com', phone: 919191919},
+  {id: 16, name: 'Sulfur', email:'teste@gmail.com', phone: 919191919},
+  {id: 17, name: 'Chlorine', email:'teste@gmail.com', phone: 919191919},
+  {id: 18, name: 'Argon', email:'teste@gmail.com', phone: 919191919},
+  {id: 19, name: 'Potassium', email:'teste@gmail.com', phone: 919191919},
+  {id: 20, name: 'Calcium', email:'teste@gmail.com', phone: 919191919},
 ];
 
 /**

@@ -6,32 +6,33 @@ import { Observable, of as observableOf, merge } from 'rxjs';
 
 // TODO: Replace this with your own data model type
 export interface ExercisesTableItem {
-  name: string;
   id: number;
+  name: string;
+  description: string;
 }
 
 // TODO: replace this with real data from your application
 const EXAMPLE_DATA: ExercisesTableItem[] = [
-  {id: 1, name: 'Hydrogen'},
-  {id: 2, name: 'Helium'},
-  {id: 3, name: 'Lithium'},
-  {id: 4, name: 'Beryllium'},
-  {id: 5, name: 'Boron'},
-  {id: 6, name: 'Carbon'},
-  {id: 7, name: 'Nitrogen'},
-  {id: 8, name: 'Oxygen'},
-  {id: 9, name: 'Fluorine'},
-  {id: 10, name: 'Neon'},
-  {id: 11, name: 'Sodium'},
-  {id: 12, name: 'Magnesium'},
-  {id: 13, name: 'Aluminum'},
-  {id: 14, name: 'Silicon'},
-  {id: 15, name: 'Phosphorus'},
-  {id: 16, name: 'Sulfur'},
-  {id: 17, name: 'Chlorine'},
-  {id: 18, name: 'Argon'},
-  {id: 19, name: 'Potassium'},
-  {id: 20, name: 'Calcium'},
+  {id: 1, name: 'Hydrogen', description: 'lorem Ipsum'},
+  {id: 2, name: 'Helium', description: 'lorem Ipsum'},
+  {id: 3, name: 'Lithium', description: 'lorem Ipsum'},
+  {id: 4, name: 'Beryllium', description: 'lorem Ipsum'},
+  {id: 5, name: 'Boron', description: 'lorem Ipsum'},
+  {id: 6, name: 'Carbon', description: 'lorem Ipsum'},
+  {id: 7, name: 'Nitrogen', description: 'lorem Ipsum'},
+  {id: 8, name: 'Oxygen', description: 'lorem Ipsum'},
+  {id: 9, name: 'Fluorine', description: 'lorem Ipsum'},
+  {id: 10, name: 'Neon', description: 'lorem Ipsum'},
+  {id: 11, name: 'Sodium', description: 'lorem Ipsum'},
+  {id: 12, name: 'Magnesium', description: 'lorem Ipsum'},
+  {id: 13, name: 'Aluminum', description: 'lorem Ipsum'},
+  {id: 14, name: 'Silicon', description: 'lorem Ipsum'},
+  {id: 15, name: 'Phosphorus', description: 'lorem Ipsum'},
+  {id: 16, name: 'Sulfur', description: 'lorem Ipsum'},
+  {id: 17, name: 'Chlorine', description: 'lorem Ipsum'},
+  {id: 18, name: 'Argon', description: 'lorem Ipsum'},
+  {id: 19, name: 'Potassium', description: 'lorem Ipsum'},
+  {id: 20, name: 'Calcium', description: 'lorem Ipsum'},
 ];
 
 /**

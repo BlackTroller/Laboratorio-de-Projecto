@@ -16,7 +16,7 @@ export class ExercisesTableComponent implements AfterViewInit {
   dataSource: ExercisesTableDataSource;
 
   /** Columns displayed in the table. Columns IDs can be added, removed, or reordered. */
-  displayedColumns = ['id', 'name', 'edit'];
+  displayedColumns = ['id', 'name', 'description', 'edit'];
 
   constructor() {
     this.dataSource = new ExercisesTableDataSource();
