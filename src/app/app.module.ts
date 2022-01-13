@@ -21,6 +21,7 @@ import { UsersDetComponent } from './users-det/users-det.component';
 import { CardsDetComponent } from './cards-det/cards-det.component';
 import { DecksDetComponent } from './decks-det/decks-det.component';
 import { ExercisesDetComponent } from './exercises-det/exercises-det.component';
+import { NgChartsModule } from 'ng2-charts';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import { ExercisesDetComponent } from './exercises-det/exercises-det.component';
     MatSelectModule,
     ReactiveFormsModule,
     MatInputModule,
-    FormsModule
+    FormsModule,
+    NgChartsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
