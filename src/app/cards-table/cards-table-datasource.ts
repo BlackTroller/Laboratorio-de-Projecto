@@ -6,32 +6,35 @@ import { Observable, of as observableOf, merge } from 'rxjs';
 
 // TODO: Replace this with your own data model type
 export interface CardsTableItem {
-  name: string;
   id: number;
+  value: number;
+  description: string;
+  imgpath: string;
+  deckName: string;
 }
 
 // TODO: replace this with real data from your application
 const EXAMPLE_DATA: CardsTableItem[] = [
-  {id: 1, name: 'Hydrogen'},
-  {id: 2, name: 'Helium'},
-  {id: 3, name: 'Lithium'},
-  {id: 4, name: 'Beryllium'},
-  {id: 5, name: 'Boron'},
-  {id: 6, name: 'Carbon'},
-  {id: 7, name: 'Nitrogen'},
-  {id: 8, name: 'Oxygen'},
-  {id: 9, name: 'Fluorine'},
-  {id: 10, name: 'Neon'},
-  {id: 11, name: 'Sodium'},
-  {id: 12, name: 'Magnesium'},
-  {id: 13, name: 'Aluminum'},
-  {id: 14, name: 'Silicon'},
-  {id: 15, name: 'Phosphorus'},
-  {id: 16, name: 'Sulfur'},
-  {id: 17, name: 'Chlorine'},
-  {id: 18, name: 'Argon'},
-  {id: 19, name: 'Potassium'},
-  {id: 20, name: 'Calcium'},
+  {id: 1, value: 20, description: 'Hydrogen', imgpath: 'xd', deckName: 'xD'},
+  {id: 2, value: 20,description: 'Helium', imgpath: 'xd', deckName: 'xD'},
+  {id: 3, value: 20,description: 'Lithium', imgpath: 'xd', deckName: 'xD'},
+  {id: 4, value: 20,description: 'Beryllium', imgpath: 'xd', deckName: 'xD'},
+  {id: 5, value: 20,description: 'Boron', imgpath: 'xd', deckName: 'xD'},
+  {id: 6, value: 20,description: 'Carbon', imgpath: 'xd', deckName: 'xD'},
+  {id: 7, value: 20,description: 'Nitrogen', imgpath: 'xd', deckName: 'xD'},
+  {id: 8, value: 20,description: 'Oxygen', imgpath: 'xd', deckName: 'xD'},
+  {id: 9, value: 20,description: 'Fluorine', imgpath: 'xd', deckName: 'xD'},
+  {id: 10, value: 20,description: 'Neon', imgpath: 'xd', deckName: 'xD'},
+  {id: 11, value: 20,description: 'Sodium', imgpath: 'xd', deckName: 'xD'},
+  {id: 12, value: 20,description: 'Magnesium', imgpath: 'xd', deckName: 'xD'},
+  {id: 13, value: 20,description: 'Aluminum', imgpath: 'xd', deckName: 'xD'},
+  {id: 14, value: 20,description: 'Silicon', imgpath: 'xd', deckName: 'xD'},
+  {id: 15, value: 20,description: 'Phosphorus', imgpath: 'xd', deckName: 'xD'},
+  {id: 16, value: 20,description: 'Sulfur', imgpath: 'xd', deckName: 'xD'},
+  {id: 17, value: 20,description: 'Chlorine', imgpath: 'xd', deckName: 'xD'},
+  {id: 18, value: 20,description: 'Argon', imgpath: 'xd', deckName: 'xD'},
+  {id: 19, value: 20,description: 'Potassium', imgpath: 'xd', deckName: 'xD'},
+  {id: 20, value: 20,description: 'Calcium', imgpath: 'xd', deckName: 'xD'},
 ];
 
 /**
@@ -97,7 +100,7 @@ export class CardsTableDataSource extends DataSource<CardsTableItem> {
     return data.sort((a, b) => {
       const isAsc = this.sort?.direction === 'asc';
       switch (this.sort?.active) {
-        case 'name': return compare(a.name, b.name, isAsc);
+        case 'name': return compare(a.description, b.description, isAsc);
         case 'id': return compare(+a.id, +b.id, isAsc);
         default: return 0;
       }

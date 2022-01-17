@@ -12,7 +12,7 @@ export class HomeComponent {
     datasets: [
       {
         data: [ 65, 59, 80, 81, 56, 55, 40 ],
-        label: 'Series A',
+        label: 'Day',
         backgroundColor: 'rgba(148,159,177,0.2)',
         borderColor: 'rgba(148,159,177,1)',
         pointBackgroundColor: 'rgba(148,159,177,1)',
@@ -23,7 +23,7 @@ export class HomeComponent {
       },
       {
         data: [ 28, 48, 40, 19, 86, 27, 90 ],
-        label: 'Series B',
+        label: 'Week',
         backgroundColor: 'rgba(77,83,96,0.2)',
         borderColor: 'rgba(77,83,96,1)',
         pointBackgroundColor: 'rgba(77,83,96,1)',
@@ -34,10 +34,22 @@ export class HomeComponent {
       },
       {
         data: [ 180, 480, 770, 90, 1000, 270, 400 ],
-        label: 'Series C',
+        label: 'Month',
         yAxisID: 'y-axis-1',
         backgroundColor: 'rgba(255,0,0,0.3)',
         borderColor: 'red',
+        pointBackgroundColor: 'rgba(148,159,177,1)',
+        pointBorderColor: '#fff',
+        pointHoverBackgroundColor: '#fff',
+        pointHoverBorderColor: 'rgba(148,159,177,0.8)',
+        fill: 'origin',
+      },
+      {
+        data: [ 190, 580, 670, 190, 900, 370, 500 ],
+        label: 'Year',
+        yAxisID: 'y-axis-1',
+        backgroundColor: 'rgba(135, 211, 124, 1)',
+        borderColor: 'green',
         pointBackgroundColor: 'rgba(148,159,177,1)',
         pointBorderColor: '#fff',
         pointHoverBackgroundColor: '#fff',

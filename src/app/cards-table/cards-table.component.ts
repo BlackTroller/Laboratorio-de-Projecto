@@ -16,7 +16,7 @@ export class CardsTableComponent implements AfterViewInit {
   dataSource: CardsTableDataSource;
 
   /** Columns displayed in the table. Columns IDs can be added, removed, or reordered. */
-  displayedColumns = ['id', 'name', 'edit'];
+  displayedColumns = ['id', 'value','description', 'imgpath','deckName', 'edit'];
 
   constructor() {
     this.dataSource = new CardsTableDataSource();
