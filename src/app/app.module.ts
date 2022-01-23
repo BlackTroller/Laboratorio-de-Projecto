@@ -22,6 +22,9 @@ import { CardsDetComponent } from './cards-det/cards-det.component';
 import { DecksDetComponent } from './decks-det/decks-det.component';
 import { ExercisesDetComponent } from './exercises-det/exercises-det.component';
 import { NgChartsModule } from 'ng2-charts';
+import { ExercisesaddComponent } from './exercisesadd/exercisesadd.component';
+import { CardsaddComponent } from './cardsadd/cardsadd.component';
+import { DecksaddComponent } from './decksadd/decksadd.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +37,10 @@ import { NgChartsModule } from 'ng2-charts';
     UsersDetComponent,
     CardsDetComponent,
     DecksDetComponent,
-    ExercisesDetComponent
+    ExercisesDetComponent,
+    ExercisesaddComponent,
+    CardsaddComponent,
+    DecksaddComponent
   ],
   imports: [
     BrowserModule,
